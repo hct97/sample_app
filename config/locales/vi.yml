@@ -1,0 +1,16 @@
+vi:
+  application:
+    english: "Tieng Anh"
+    vietnamese: "Tieng Viet"
+
+  static_pages:
+    rails_tutorial: "Huong dan Rails"
+    sample_app: "Ung dung don gian"
+    home: "Trang chu"
+    help: "Trang tro giup"
+    contact: "Trang lien he"
+    about: "Ve chung toi"
+    home_content_html: "Trang chu"
+    help_content_html: "Trang tro giup"
+    about_content_html: "Ve chung toi"
+    contact_content_html: "Trang lien he"
