@@ -1,16 +1,25 @@
 vi:
   application:
-    english: "Tieng Anh"
-    vietnamese: "Tieng Viet"
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
 
   static_pages:
-    rails_tutorial: "Huong dan Rails"
-    sample_app: "Ung dung don gian"
-    home: "Trang chu"
-    help: "Trang tro giup"
-    contact: "Trang lien he"
-    about: "Ve chung toi"
-    home_content_html: "Trang chu"
-    help_content_html: "Trang tro giup"
-    about_content_html: "Ve chung toi"
-    contact_content_html: "Trang lien he"
+    rails_tutorial: "Hưóng dẫn Rails"
+    sample_app: "Ứng dụng đơn giản"
+    home: "Trang chủ"
+    help: "Trang trợ giúp"
+    contact: "Trang liên hệ"
+    about: "Về chúng tôi"
+    home_content_html: "Trang chủ"
+    help_content_html: "Trang trợ giúp"
+    about_content_html: "về chúng tôi"
+    contact_content_html: "Trang liên hệ"
+    login: "Đăng nhập"
+    new: "Tin tức"
+    welcome: "Chào mừng bạn đến với ứng dụng đầu tiên"
+    content_welcome1: "Đây là trang chủ của"
+    content_welcome2: "thiết kế một ứng dụng đơn giản."
+    tutorial: "Hướng dẫn Ruby On Rails"
+
+    home:
+      signup_now: "Đăng Ký Ngay !"
