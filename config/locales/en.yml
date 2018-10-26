@@ -21,3 +21,6 @@ en:
     content_welcome1: "This is the home page for the"
     content_welcome2: "sample application."
     signup_now: "Sign Up now!"
+
+  users:
+    signup: "Sign Up"

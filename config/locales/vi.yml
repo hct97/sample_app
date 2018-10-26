@@ -20,3 +20,6 @@ vi:
     content_welcome1: "Day la trang chu cua"
     content_welcome2: "thiet ke ung dung don gian."
     signup_now: "Dang Ky Ngay!"
+
+  users:
+    signup: "Dang ky"
