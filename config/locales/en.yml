@@ -20,4 +20,9 @@ en:
     welcome: "Welcome to the Sample App"
     content_welcome1: "This is the home page for the"
     content_welcome2: "sample application."
-    signup_now: "Sign Up now!"
+    tutorial: "Ruby On Rails Tutorial"
+    home:
+      signup_now: "SignUp Now"
+
+  users:
+    signup: "Sign Up"
