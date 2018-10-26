@@ -2,6 +2,7 @@ en:
   application:
     english: "English"
     vietnamese: "Vietnamese"
+    home: "Home"
 
   static_pages:
     rails_tutorial: "Rails Tutorials"
@@ -14,3 +15,9 @@ en:
     help_content_html: "Help"
     about_content_html: "About"
     contact_content_html: "Contact"
+    login: "Login"
+    new: "News"
+    welcome: "Welcome to the Sample App"
+    content_welcome1: "This is the home page for the"
+    content_welcome2: "sample application."
+    signup_now: "Sign Up now!"
