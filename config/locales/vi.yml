@@ -25,4 +25,11 @@ vi:
       signup_now: "Đăng Ký Ngay !"
 
   users:
-    signup: "Đăng ký"
+    signup:
+      title: "Sign Up"
+      create: "Create my account"
+      confirm: "Confirm"
+    alert:
+      error:
+        one: The form contains %{count} error.
+        other: The form contains %{count} errors.
