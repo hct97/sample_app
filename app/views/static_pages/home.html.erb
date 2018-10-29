@@ -1,10 +1,10 @@
-<% provide :title, t("static_pages.home") %>
+<% provide :title, t("application.home") %>
 <div class="center jumbotron">
   <h1><%= t "static_pages.welcome" %></h1>
-  <h2>  <%= t "static_pages.content_welcome1" %>
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+  <h2><%= t "static_pages.content_welcome1" %>
+    <%= link_to t("static_pages.tutorial"), "http://www.railstutorial.org/" %>
     <%= t "static_pages.content_welcome2" %>
   </h2>
 
-  <%= link_to (t "static_pages.signup_now"), "#", class: "btn btn-lg btn-primary" %>
+  <%= link_to t(".signup_now"), signup_path, class: "btn btn-lg btn-primary" %>
 </div>
