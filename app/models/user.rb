@@ -13,6 +13,43 @@ class User < ApplicationRecord
   before_save :downcase
   has_secure_password
 
+  class << self
+    def digest string
+      cost = if ActiveModel::SecurePassword.min_cost.present?
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
+      BCrypt::Password.create string, cost: cost
+    end
+
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
+  end
+
+  def remember
+    self.remember_token = User.new_token
+    update remember_digest: User.digest(remember_token)
+  end
+
+  def authenticated? remember_token
+    return false if remember_digest.nil?
+    BCrypt::Password.new(remember_digest).is_password? remember_token
+  end
+
+  def forget
+    update remember_digest: nil
+  end
+
+  def remember_token=(remember_token)
+    @remember_token = remember_token
+  end
+
+  def remember_token
+    @remember_token
+  end
+
   private
 
   def downcase
