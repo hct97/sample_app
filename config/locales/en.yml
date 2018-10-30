@@ -21,15 +21,26 @@ en:
     content_welcome1: "This is the home page for the"
     content_welcome2: "sample application."
     tutorial: "Ruby On Rails Tutorial"
+    sample_app_welcome: "Welcome Sample App"
     home:
       signup_now: "SignUp Now"
 
   users:
+    login: "Login"
+    new: "New user "
     signup:
       title: "Sign Up"
       create: "Create my account"
       confirm: "Confirm"
+      login: "Login"
     alert:
       error:
         one: The form contains %{count} error.
         other: The form contains %{count} errors.
+
+  sessions:
+    create:
+      invalid: "Invalid email/password combination"
+      success: "Login success"
+    destroy:
+        logout: "Logout success"
