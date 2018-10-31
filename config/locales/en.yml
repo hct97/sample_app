@@ -28,6 +28,7 @@ en:
   users:
     login: "Login"
     new: "New user "
+    remenber: "Remember me on this computer"
     signup:
       title: "Sign Up"
       create: "Create my account"

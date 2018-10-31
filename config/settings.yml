@@ -8,3 +8,6 @@ user:
     length: 6
   gravatar:
       size: 80
+
+session:
+  params: "1"
