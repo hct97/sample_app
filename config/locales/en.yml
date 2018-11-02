@@ -29,6 +29,10 @@ en:
     login: "Login"
     new: "New user "
     remenber: "Remember me on this computer"
+    delete: "Delete"
+    confirm: "Are You Sure?"
+    index:
+      title: "All users"
     signup:
       title: "Sign Up"
       create: "Create my account"
@@ -38,6 +42,18 @@ en:
       error:
         one: The form contains %{count} error.
         other: The form contains %{count} errors.
+        login: "Please Login"
+        not_found: "User Not Found"
+      success:
+        update: "Profile updated"
+    edit:
+      title: "Edit Profile"
+      save: "Save changes"
+      change: "Change"
+    delete:
+      title: "Delete"
+      success: "User Deleted!"
+      fail: "Can't Delete User"
 
   sessions:
     create:
