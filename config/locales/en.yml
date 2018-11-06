@@ -61,3 +61,13 @@ en:
       success: "Login success"
     destroy:
         logout: "Logout success"
+  mail:
+    active:
+      not_active: "Account not activated. \n Check your email for the activation link."
+      check_active: "Please check your email to activate your account."
+      link_active: "Active"
+      title: "Welcome to the Sample App! Click on the link below to activate your account:"
+      hi: "Hi"
+      subject: "Account activation"
+      actived: "Account activated!"
+      invalid: "Invalid activation link"
