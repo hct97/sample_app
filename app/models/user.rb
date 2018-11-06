@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  attr_reader :remember_token
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   validates :name, presence: true,
@@ -8,10 +9,12 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: Settings.user.case_sensitive}
   validates :password, presence: true,
-    length: {minimum: Settings.user.password.length}
+    length: {minimum: Settings.user.password.length},
+    allow_nil: true
 
   before_save :downcase
   has_secure_password
+  scope :ordered, ->{order :created_at}
 
   class << self
     def digest string
@@ -42,12 +45,12 @@ class User < ApplicationRecord
     update remember_digest: nil
   end
 
-  def remember_token=(remember_token)
-    @remember_token = remember_token
+  def current_user? user
+    self == user
   end
 
-  def remember_token
-    @remember_token
+  def remember_token= value
+    @remember_token = value
   end
 
   private
