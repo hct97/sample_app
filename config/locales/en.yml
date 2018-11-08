@@ -31,6 +31,9 @@ en:
     remenber: "Remember me on this computer"
     delete: "Delete"
     confirm: "Are You Sure?"
+    reset_password: "(Forgot Password)"
+
+    submit: "Submit"
     index:
       title: "All users"
     signup:
@@ -71,3 +74,28 @@ en:
       subject: "Account activation"
       actived: "Account activated!"
       invalid: "Invalid activation link"
+    reset:
+      subject: "Reset Your Password!"
+
+  password_resets:
+    new:
+      title: "Forgot password"
+    edit:
+      title: "Password reset"
+    create:
+      sent: "Email sent with password reset instructions"
+      not_found: "Email address not found"
+    update:
+      success: "Password has been reset."
+      failed: "Password reset failed"
+      expired: "Password reset has expired."
+      empty: "can't be empty"
+
+  user_mailer:
+    password_reset:
+      subject: "Password reset"
+      text: "To reset your password click the link below:"
+      link_active: "Reset password"
+      text_expire: "This link will expire in two hours"
+      text_ignore: "If you did not request your password to be reset, please ignore this email and
+  your password will stay as it is."

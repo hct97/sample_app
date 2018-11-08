@@ -13,3 +13,6 @@ user:
 
 session:
   params: "1"
+
+reset_password:
+  expired: 2
