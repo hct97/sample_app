@@ -32,3 +32,6 @@
 
 /config/database.yml
 /config/credentials.yml.enc
+
+# Ignore application configuration
+/config/application.yml
