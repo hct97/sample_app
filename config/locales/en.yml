@@ -24,6 +24,10 @@ en:
     sample_app_welcome: "Welcome Sample App"
     home:
       signup_now: "SignUp Now"
+      micropost: "micropost"
+      feed: "Micropost Feed"
+      post: "Post"
+      type: "Compose new micropost..."
 
   users:
     login: "Login"
@@ -32,6 +36,8 @@ en:
     delete: "Delete"
     confirm: "Are You Sure?"
     reset_password: "(Forgot Password)"
+    logged: "Please log in."
+    micropost: "Micropost"
 
     submit: "Submit"
     index:
@@ -99,3 +105,23 @@ en:
       text_expire: "This link will expire in two hours"
       text_ignore: "If you did not request your password to be reset, please ignore this email and
   your password will stay as it is."
+
+  microposts:
+    created: "Micropost Created"
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      delete: "Delete"
+      confirm: "Are you sure?"
+    destroy:
+      delete: "Micropost deleted"
+      delete_failed: "Can't delete this post"
+
+  shared:
+    error_messages:
+      error: "Error"
+
+  has_error: "The form contains"
+  error: "errors"
+  max_size_file: "sould be less than 5MB"
+  alert_maxfile_js: "Maximum file size is 5MB. Please choose a smaller file"

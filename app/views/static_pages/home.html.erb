@@ -1,10 +1,28 @@
 <% provide :title, t("application.home") %>
-<div class="center jumbotron">
-  <h1><%= t "static_pages.welcome" %></h1>
-  <h2><%= t "static_pages.content_welcome1" %>
-    <%= link_to t("static_pages.tutorial"), "http://www.railstutorial.org/" %>
-    <%= t "static_pages.content_welcome2" %>
-  </h2>
 
-  <%= link_to t(".signup_now"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3><%= t ".feed" %></h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron">
+    <h1><%= t "static_pages.welcome" %></h1>
+    <h2>
+      <%= t "static_pages.content_welcome1" %>
+      <%= link_to t("static_pages.tutorial"), "http://www.railstutorial.org/" %>
+      <%= t "static_pages.content_welcome2" %>
+    </h2>
+    <%= link_to t(".signup_now"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>
