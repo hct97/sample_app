@@ -16,3 +16,7 @@ session:
 
 reset_password:
   expired: 2
+max_length: 140
+picture_size: 5
+resize_limit: [400, 400]
+content_length: 80
