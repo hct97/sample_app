@@ -25,6 +25,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @follow = current_user.active_relationships.build
+    @unfollow = current_user.active_relationships.find_by followed_id: @user.id
     redirect_to signup_path unless @user
     @microposts = @user.microposts.page(params[:page])
                        .per Settings.user.per_page

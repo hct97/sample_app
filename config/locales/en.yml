@@ -125,3 +125,8 @@ en:
   error: "errors"
   max_size_file: "sould be less than 5MB"
   alert_maxfile_js: "Maximum file size is 5MB. Please choose a smaller file"
+  following: "Following"
+  followers: "Followers"
+  view_my_profile: "View my profile!"
+  btn_follow: "Follow"
+  btn_unfollow: "Unfollow"
